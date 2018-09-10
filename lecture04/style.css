@@ -1,0 +1,64 @@
+/* 載入web字體 google思源黑體 */
+@import url('https://fonts.googleapis.com/css?family=Ruslan+Display');
+@import url( //fonts.googleapis.com/earlyaccess/notosanstc.css);
+
+/* 常用的文字設定 */
+.title {
+    font-size: 40px;
+    /* text-decoration: line-through; */
+    font-style: italic;
+    /* font-weight: 100; */
+    /* 字型的名稱中間有空白的話，在前後加" */
+    font-family: 'Ruslan Display', cursive, 'Noto Sans TC', sans-serif, 'Courier New', Courier, monospace;
+    color: #0078d7;
+    background: #ffbb00;
+    width: 200px;
+    /* 每個字的距離 */
+    letter-spacing: 2px;
+    /* 英文單字間的距離 */
+    word-spacing: 3px;
+    line-height: 80px;
+    text-align: center;
+    text-shadow: 1px 1px 1px #0078d7;
+}
+
+p {
+    line-height: 1.5;
+}
+
+/* 連結 */
+a {
+    font-size: 30px;
+    text-decoration: none;
+    /* 讓超連結以區塊型態出現 */
+    display: block;
+    line-height: 100px;
+    width: 100px;
+    height: 100px;
+    text-align: center;
+}
+
+a:link {
+    color: #ffbb00;
+}
+
+a:visited {
+    color: green;
+}
+
+a:hover {
+    background-color: goldenrod;
+    text-decoration: underline;
+    border-left: 20px solid #0078d7;
+}
+
+a:active {
+    background-color: blueviolet;
+}
+
+/* box */
+.box {
+    width: 300px;
+    height: 200px;
+    width: 2px solid black;
+}

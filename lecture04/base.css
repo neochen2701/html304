@@ -1,0 +1,50 @@
+* {
+    /* 預設為IE的算法 box的width及height是含框線 */
+    box-sizing: border-box;
+}
+
+.container {
+    width: 900px;
+    border: 1px solid #000000;
+    overflow: auto;
+}
+
+@media screen and (max-width: 400px) {
+    .container {
+        width: 100%;
+        overflow: auto;
+    }
+
+    .box {
+        width: 100%;
+    }
+
+    [id^="box"] {
+        width: 100%;
+    }
+}
+
+.box {
+    color: #000;
+    background-color: bisque;
+    width: 100px;
+    height: 100px;
+    text-align: center;
+    margin: 10px;
+}
+
+#box1 {
+    border: 10px solid #000000;
+    margin-bottom: 30px;
+    width: calc(100% *2/3);
+}
+
+#box2 {
+    border: 10px solid #000000;
+    margin-top: 10px;
+    width: calc(100% *1/3);
+}
+
+#box3 img {
+    width: 100%;
+}
