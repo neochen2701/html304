@@ -1,0 +1,94 @@
+* {
+    position: absolute;
+    box-sizing: border-box;
+}
+
+html,
+body {
+    height: 100%;
+    width: 100%;
+    overflow: hidden;
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    background: #ffee9d
+}
+
+
+
+.head {
+    height: 300px;
+    width: 300px;
+    transform: translate(-50%, -50%);
+    top: 50%;
+    left: 50%;
+    border-radius: 50%;
+    background-color: #fbd671;
+    border: 1px solid #000000;
+    box-shadow: inset -10px -10px 0px #EFBB42;
+
+}
+
+.face {
+    height: 170px;
+    width: 150px;
+    top: 75px;
+    left: 75px;
+    /* border: 1px solid #000000; */
+}
+
+.mouth {
+    height: 75px;
+    width: 100%;
+    bottom: 0;
+    left: 0;
+    background-color: #20184E;
+    border-radius: 0px 0px 150px 150px;
+    border: 5px solid #20184E;
+    /* 超過mouth的範圍就隱藏 */
+    overflow: hidden;
+}
+
+.tongue {
+    height: 70px;
+    width: 90px;
+    left: 40px;
+    top: 25px;
+    background-color: rgb(201, 52, 64);
+    border-radius: 50%;
+}
+
+
+.eye-group {
+    height: 80px;
+    width: 150px;
+    top: 10px;
+    left: 0;
+    /* border: 1px solid #000000; */
+}
+
+.eye {
+    height: 50px;
+    width: 30px;
+    background-color: #20184E;
+    border-radius: 50%;
+}
+
+.eye-left {
+    left: 15px;
+}
+
+.eye-right {
+    right: 15px;
+}
+
+.pupil {
+    height: 20px;
+    width: 12px;
+    top: 5px;
+    left: 5px;
+    background-color: rgb(150, 150, 142);
+    border-radius: 50%;
+}
