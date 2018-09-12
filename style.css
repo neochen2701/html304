@@ -3,7 +3,6 @@
     /* 元素的大小 計算包含到邊框(border) */
     box-sizing: border-box;
     font-size: 14px;
-    border: 1px solid red;
 }
 
 /* 重設所有常用的標籤的margin & padding為0  reset css */
@@ -28,11 +27,4 @@ div {
     margin: 0;
     /* 留白 */
     padding: 0;
-}
-
-/* 設定容器大小 */
-.container {
-    width: 800px;
-    margin: 0 auto;
-    border: 1px solid blue;
 }

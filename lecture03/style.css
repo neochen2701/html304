@@ -12,3 +12,10 @@ header {
 .lecture img {
     width: 100%
 }
+
+/* 設定容器大小 */
+.container {
+    width: 800px;
+    margin: 0 auto;
+    border: 1px solid blue;
+}
