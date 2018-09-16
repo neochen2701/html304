@@ -1,0 +1,139 @@
+.border-left {
+    border-left: 3px solid red;
+}
+
+/* reset css */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+section,
+article,
+html,
+body,
+nav,
+header,
+main,
+footer,
+aside,
+div {
+    /* 元素之間的距離 */
+    margin: 0;
+    /* 留白 */
+    padding: 0;
+}
+
+/* 基礎區塊設定 */
+
+* {
+    box-sizing: :border-box;
+}
+
+/* 框線 */
+.border-red {
+    border: 2px solid red;
+}
+
+/* 容器設定 */
+/* 行動優先 容器大小100%  */
+.container {
+    width: 100%;
+    margin: 0 auto;
+}
+
+/* 滿版用的容器 */
+.container-fluid {
+    width: 100%;
+}
+
+/* header */
+header {
+    color: white;
+    height: 400px;
+    padding-top: 250px;
+    background-image: url("https://picsum.photos/500/200?image=1072");
+    background-size: cover;
+    /* 
+    cover 覆蓋 即滿版 在rwd中很重要 
+    當寛度不夠時，會等比例放大
+    當高度不夠時，會將高度固定
+    */
+    background-repeat: no-repeat;
+}
+
+header .container-fluid {
+    height: 100px;
+    border: 3px solid blue;
+}
+
+@media screen and (min-width: 1200px) {
+    .container {
+        width: 1140px;
+    }
+}
+
+@media screen and (min-width: 992px) and (max-width: 1199.99px) {
+    .container {
+        width: 960px;
+    }
+}
+
+@media screen and (min-width: 768px) and (max-width: 991.99px) {
+    .container {
+        width: 720px;
+    }
+}
+
+@media screen and (min-width: 576px) and (max-width: 767.99px) {
+    .container {
+        width: 540px;
+    }
+
+    header {
+        color: white;
+        height: 400px;
+        padding-top: 250px;
+        background-image: url("../images/xs.png");
+        background-position-x: 100px;
+
+    }
+}
+
+@media screen and (max-width: 575.99px) {
+    .container {
+        width: 540px;
+    }
+
+    header {
+        color: red;
+        height: 400px;
+        padding-top: 250px;
+        background-image: url("../images/xs.png");
+        background-size: 540px 420px;
+    }
+
+    header .container-fluid {
+        height: 150px;
+        border: 3px solid greenyellow;
+    }
+}
+
+
+.pokemon {
+    width: 90px;
+    height: 90px;
+    background-image: url(../images/Pokemon_pokedex_1-649.png)
+}
+
+.pokemon-2 {
+    background-position-x: 90px;
+}
+
+/* 主區塊設定 */
+
+
+
+/* 導覽列設定 */
