@@ -1,0 +1,132 @@
+/* reset css */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+section,
+article,
+html,
+body,
+nav,
+header,
+main,
+footer,
+aside,
+div {
+    /* 元素之間的距離 */
+    margin: 0;
+    /* 留白 */
+    padding: 0;
+}
+
+/* 基礎區塊設定 */
+
+* {
+    box-sizing: :border-box;
+}
+
+/* 框線 */
+.border-red {
+    border: 2px solid red;
+}
+
+/* 容器設定 */
+/* 行動優先 容器大小100%  */
+.container {
+    width: 100%;
+    margin: 0 auto;
+}
+
+
+.navbar li ul {
+    /* 消失 */
+    display: none;
+    /* 透明度 0 */
+    opacity: 0；
+}
+
+.navbar li:hover>ul {
+    /* 顯示：區塊 */
+    display: block;
+    opacity: 1;
+    transition: opacity 1s;
+}
+
+article h1~p {
+    padding: 10px;
+    border-left: 10px solid burlywood;
+    font-style: oblique;
+    background-image: ;
+    background-size: 20px;
+    background-repeat: no-repeat;
+}
+
+article h1+p:hover {
+    border: 2px solid greenyellow;
+}
+
+.btn.btn-lg.btn-primary {
+    border-radius: 0px;
+}
+
+div p {
+    padding-left: 20px;
+}
+
+p:first-child {
+    border: 1px solid greenyellow;
+}
+
+
+p:nth-child(2) {
+    border: 3px solid blueviolet;
+}
+
+
+/* 2n+1 除2餘1 即奇數 */
+p:nth-child(2n+1) {
+    border: 1px solid red;
+}
+
+/* box */
+.box {
+    border: 1px solid black;
+    width: 24%;
+    height: 200px;
+    float: left;
+    line-height: 196px;
+    text-align: center;
+    font-size: 30px;
+
+}
+
+
+.box:nth-child(8n+1),
+.box:nth-child(8n+3),
+.box:nth-child(8n+6),
+.box:nth-child(8n+8) {
+    background-color: rgb(132, 146, 223);
+}
+
+/* box1 */
+.box1 {
+    border: 1px solid black;
+    width: 19%;
+    height: 200px;
+    float: left;
+    line-height: 196px;
+    text-align: center;
+    font-size: 30px;
+
+}
+
+.box1:nth-child(10n+1),
+.box1:nth-child(10n+3),
+.box1:nth-child(10n+5),
+.box1:nth-child(10n+7),
+.box1:nth-child(10n+9) {
+    background-color: rgb(132, 146, 223);
+}

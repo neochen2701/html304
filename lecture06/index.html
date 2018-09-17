@@ -5,12 +5,154 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>第六堂課/title>
+    <title>第六堂課</title>
+    <link rel="stylesheet" href="../node_modules/bootstrap/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="./style.css">
 </head>
 
 <body>
     <h1>第六堂課</h1>
     <p>Lecture 06</p>
+    <p>DOM Tree</p>
+    <ul class="navbar">
+        <li>menu item 1</li>
+        <li>menu item 2
+            <ul>
+                <li>sub menu item 1
+                    <ul>
+                        <li>sub sub menu item 1</li>
+                        <li>sub sub menu item 2</li>
+                        <li>sub sub menu item 3</li>
+                    </ul>
+                </li>
+                <li>sub menu item 2</li>
+                <li>sub menu item 3
+                    <ul>
+                        <li>sub sub menu item 1</li>
+                        <li>sub sub menu item 2</li>
+                        <li>sub sub menu item 3</li>
+                    </ul>
+                </li>
+            </ul>
+        </li>
+        <li>menu item 3</li>
+        <li>menu item 4
+            <ul>
+                <li>sub menu item 1
+                    <ul>
+                        <li>sub sub menu item 1</li>
+                        <li>sub sub menu item 2</li>
+                        <li>sub sub menu item 3</li>
+                    </ul>
+                </li>
+                <li>sub menu item 2</li>
+                <li>sub menu item 3
+                    <ul>
+                        <li>sub sub menu item 1</li>
+                        <li>sub sub menu item 2</li>
+                        <li>sub sub menu item 3</li>
+                    </ul>
+                </li>
+            </ul>
+        </li>
+        <li>menu item 5</li>
+    </ul>
+
+    <hr>
+    <p>原始</p>
+    <ul>
+        <li>menu item 1</li>
+        <li>menu item 2
+            <ul>
+                <li>sub menu item 1
+                    <ul>
+                        <li>sub sub menu item 1</li>
+                        <li>sub sub menu item 2</li>
+                        <li>sub sub menu item 3</li>
+                    </ul>
+                </li>
+                <li>sub menu item 2</li>
+                <li>sub menu item 3
+                    <ul>
+                        <li>sub sub menu item 1</li>
+                        <li>sub sub menu item 2</li>
+                        <li>sub sub menu item 3</li>
+                    </ul>
+                </li>
+            </ul>
+        </li>
+        <li>menu item 3</li>
+        <li>menu item 4
+            <ul>
+                <li>sub menu item 1
+                    <ul>
+                        <li>sub sub menu item 1</li>
+                        <li>sub sub menu item 2</li>
+                        <li>sub sub menu item 3</li>
+                    </ul>
+                </li>
+                <li>sub menu item 2</li>
+                <li>sub menu item 3
+                    <ul>
+                        <li>sub sub menu item 1</li>
+                        <li>sub sub menu item 2</li>
+                        <li>sub sub menu item 3</li>
+                    </ul>
+                </li>
+            </ul>
+        </li>
+        <li>menu item 5</li>
+    </ul>
 </body>
+
+<hr>
+<article>
+    <h1>Lorem ipsum dolor sit, amet consectetur adipisicing elit.</h1>
+    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quas mollitia impedit ipsa laborum dolorum incidunt
+        voluptas, corrupti sit sint, aperiam dolore dolor! Ex magni, placeat libero doloribus a mollitia esse.</p>
+    <p>Facere illum ipsum perspiciatis maiores numquam ad rem ullam neque voluptate. Vel fuga at doloremque optio
+        voluptatum numquam in. Eum reprehenderit enim ullam voluptatem, earum eligendi odit facere harum fugiat.</p>
+    <p>A libero consequatur nemo, officia at voluptatum fuga cupiditate magnam, aut, vel molestias dolores optio
+        dolorum
+        culpa aliquam officiis impedit id deserunt. Magni quas assumenda dolores soluta animi molestias repudiandae.</p>
+    <h1>Lorem ipsum dolor sit, amet consectetur adipisicing elit.</h1>
+    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quas mollitia impedit ipsa laborum dolorum incidunt
+        voluptas, corrupti sit sint, aperiam dolore dolor! Ex magni, placeat libero doloribus a mollitia esse.</p>
+    <p>Facere illum ipsum perspiciatis maiores numquam ad rem ullam neque voluptate. Vel fuga at doloremque optio
+        voluptatum numquam in. Eum reprehenderit enim ullam voluptatem, earum eligendi odit facere harum fugiat.</p>
+    <p>A libero consequatur nemo, officia at voluptatum fuga cupiditate magnam, aut, vel molestias dolores optio
+        dolorum
+        culpa aliq
+</article>
+<hr>
+<p>原始</p>
+<h1>Lorem ipsum dolor sit, amet consectetur adipisicing elit.m</h1>
+<p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quas mollitia impedit ipsa laborum dolorum incidunt
+    voluptas, corrupti sit sint, aperiam dolore dolor! Ex magni, placeat libero doloribus a mollitia esse.</p>
+<p>Facere illum ipsum perspiciatis maiores numquam ad rem ullam neque voluptate. Vel fuga at doloremque optio
+    voluptatum numquam in. Eum reprehenderit enim ullam voluptatem, earum eligendi odit facere harum fugiat.</p>
+<p>A libero consequatur nemo, officia at voluptatum fuga cupiditate magnam, aut, vel molestias dolores optio dolorum
+    culpa aliquam officiis impedit id deserunt. Magni quas assumenda dolores soluta animi molestias repudiandae.</p>
+<h1>Lorem ipsum dolor sit, amet consectetur adipisicing elit.</h1>
+<p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quas mollitia impedit ipsa laborum dolorum incidunt
+    voluptas, corrupti sit sint, aperiam dolore dolor! Ex magni, placeat libero doloribus a mollitia esse.</p>
+<p>Facere illum ipsum perspiciatis maiores numquam ad rem ullam neque voluptate. Vel fuga at doloremque optio
+    voluptatum numquam in. Eum reprehenderit enim ullam voluptatem, earum eligendi odit facere harum fugiat.</p>
+<p>A libero consequatur nemo, officia at voluptatum fuga cupiditate magnam, aut, vel molestias dolores optio dolorum
+    culpa aliq</p>
+<hr>
+<div class="btn btn-lg btn-primary">button</div>
+<hr>
+<p>:first-child</p>
+<div>div
+    <p>第1個P</p>
+    <p>第2個P</p>
+    <p>第3個P</p>
+    <p>第4個P</p>
+</div>
+<p>第1個P</p>
+<p>第2個P</p>
+<p>第3個P</p>
+<p>第4個P</p>
 
 </html>
