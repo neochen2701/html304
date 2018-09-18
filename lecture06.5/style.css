@@ -1,0 +1,24 @@
+* {
+    box-sizing: border-box;
+    padding: 0px;
+    margin: 0px;
+    list-style-type: none;
+}
+
+h1 {
+    color: rgb(135, 170, 222);
+
+}
+
+.navbar ul {
+    color: burlywood;
+    display: flex;
+}
+
+.navbar>ul {
+    flex-direction: row;
+}
+
+.navbar li>ul {
+    flex-direction: column;
+}
