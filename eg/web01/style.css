@@ -6,6 +6,7 @@ body {
     /* height: 100%; */
     width: 100%;
     font-family: 'Noto Sans TC', sans-serif, Courier, monospace;
+    background-color: rgb(250, 250, 25 0);
 }
 
 /* bd是初切版使用 */
@@ -42,11 +43,8 @@ a:active {
     background-color: rgba(104, 104, 104, 0.2);
 }
 
-.navbar {
-    background-color: rgb(250, 250, 250);
-}
-
-.navbar ul {
+.navbar-ul {
+    height: 40px;
     list-style-type: none;
     display: flex;
     flex-direction: row-reverse;
@@ -54,13 +52,18 @@ a:active {
     padding-top: 10px;
 }
 
+.navbar-ul li {
+    margin-right: 30px;
+}
+
 .header {
     /* height: 690px; */
-    background-image: url('https://picsum.photos/955/690?image=532');
+    background-image: url('./images/index-header-img-2x.png');
     background-repeat: no-repeat;
     background-size: cover;
+    background-color: #088085;
     vertical-align: middle;
-    color: white;
+    color: #fff;
     padding-left: calc(100%/15);
     padding-right: calc(100%/15);
 }
@@ -69,10 +72,11 @@ a:active {
     font-size: 4em;
     text-shadow: 0.1em 0.01em 0.2em #000000;
     padding-top: 20%;
+    margin: 0 auto;
 }
 
 .header p {
-    font-size: 6em;
+    font-size: 3.5em;
     text-shadow: 0.01em 0.01em 0.2em #000000;
     padding-top: 0%;
     padding-bottom: 20%
@@ -96,7 +100,8 @@ a:active {
 
 .box1 h2 {
     color: rgba(104, 104, 104);
-    font-size: 4em;
+    font-size: 1.8em;
+    margin: 0 15%;
 }
 
 .box2 {
@@ -107,46 +112,178 @@ a:active {
     align-items: center;
 }
 
-.box3 {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    align-items: center;
-    background: rgb(230, 230, 230);
-}
+
 
 .sbox {
     width: 28%;
     margin: 1% 2%;
     height: 240px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
     background: blanchedalmond;
+    background-repeat: no-repeat;
+    background-size: auto 45%;
+    background-position: 10px 10px;
+    color: rgb(240, 240, 240);
 }
+
+.sbox:nth-child(6n+1) {
+    background-color: #5ED3B6;
+    background-image: url('./images/sbox1.png');
+}
+
+.sbox:nth-child(6n+2) {
+    background-color: #C7AC8E;
+    background-image: url('./images/sbox2.png');
+}
+
+.sbox:nth-child(6n+3) {
+    background-color: #50BFEA;
+    background-image: url('./images/sbox3.png');
+}
+
+.sbox:nth-child(6n+4) {
+    background-color: #F37E53;
+    background-image: url('./images/sbox4.png');
+}
+
+.sbox:nth-child(6n+5) {
+    background-color: #A3CDA5;
+    background-image: url('./images/sbox5.png');
+}
+
+.sbox:nth-child(6n+6) {
+    background-color: #F8B238;
+    background-image: url('./images/sbox6.png');
+}
+
+/* 第2層 */
+.sbox>h1 {
+    font-size: 3em;
+    margin: 30px 5px 0px 150px;
+}
+
+.sbox>h2 {
+    font-size: 1.6em;
+    margin: 30px 15px 0px 50px;
+}
+
+.sbox>p {
+    color: rgb(105, 105, 105);
+    font-size: 0.6em;
+    margin: 0px 0px 10px 10px;
+}
+
+/* 第3層 */
+.box3 {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    /* align-items: center; */
+    background: #EBEBEB;
+    border-top: 3px solid #cccccc;
+    border-bottom: 3px solid #cccccc;
+}
+
 
 .sbox1 {
     width: 49.99%;
     height: 240px;
-    background: blanchedalmond;
+
+}
+
+.sbox1:nth-child(2n+1) {
+    background-image: url('./images/handx2.png');
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position-x: 80%;
+}
+
+.sbox1:nth-child(2n+1):hover:after {
+    content: "";
+    display: block;
+    height: 100%;
+    width: 100%;
+    top: 0;
+    background-color: rgb(235, 235, 235);
+    background-image: url('./images/handx2.png');
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position-x: 50%;
+}
+
+.sbox1:nth-child(2n+2) {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-right: 10%;
+}
+
+.sbox1>h1 {
+    font-size: 1.6em;
+}
+
+.sbox1>p {
+    font-size: 1.2em;
 }
 
 
+/* 第4層 */
 .box4 {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: space-between;
     align-items: center;
-    background: rgb(100, 100, 100);
+    background: rgb(240, 240, 240);
     margin-top: 50px;
 }
 
 .sbox2 {
-    width: 49.99%;
-    height: 240px;
-    background: #ffffff;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 49.8%;
+    padding: 3% 0;
+    background: rgb(240, 240, 240);
 }
 
-@media screen and (min-width: 1200px) {}
+.sbox2line {
+    border-right: 4px double rgb(105, 105, 105);
+}
+
+.sbox2 i {
+    margin: 0 10%;
+    color: rgb(155, 155, 155);
+}
+
+.sbox2 h1 {
+    margin: 5px 10%;
+    color: rgb(105, 105, 105);
+}
+
+.sbox2 p {
+    margin: 0 10%;
+    color: rgb(125, 125, 125);
+}
+
+
+@media screen and (min-width: 1600px) {}
+
+@media screen and (min-width: 1200px) and (max-width: 1599.99px) {
+    .sbox>h1 {
+        font-size: 2.4em;
+        margin: 30px 5px 0px 150px;
+    }
+
+    .sbox>h2 {
+        font-size: 1.4em;
+        margin: 30px 5px 0px 50px;
+    }
+}
 
 @media screen and (min-width: 992px) and (max-width: 1199.99px) {
     .header h1 {
@@ -154,8 +291,27 @@ a:active {
     }
 
     .header p {
-        font-size: 5em;
+        font-size: 3.1em;
     }
+
+    .sbox>h1 {
+        font-size: 2em;
+        margin: 30px 5px 0px 150px;
+    }
+
+    .sbox>h2 {
+        font-size: 1.4em;
+        margin: 20px 15px 0px 40px;
+    }
+
+    .sbox1>h1 {
+        font-size: 1.4em;
+    }
+
+    .sbox1>p {
+        font-size: 1em;
+    }
+
 }
 
 @media screen and (min-width: 768px) and (max-width: 991.99px) {
@@ -164,7 +320,7 @@ a:active {
     }
 
     .header p {
-        font-size: 3.6em;
+        font-size: 2.7em;
     }
 
     .sbox {
@@ -174,6 +330,24 @@ a:active {
     .sbox1 {
         width: 46%;
     }
+
+    .sbox>h1 {
+        font-size: 2em;
+        margin: 30px 5px 0px 140px;
+    }
+
+    .sbox>h2 {
+        font-size: 1.4em;
+        margin: 30px 15px 0px 50px;
+    }
+
+    .sbox1>h1 {
+        font-size: 1.2em;
+    }
+
+    .sbox1>p {
+        font-size: 1em;
+    }
 }
 
 @media screen and (min-width: 576px) and (max-width: 767.99px) {
@@ -182,38 +356,242 @@ a:active {
     }
 
     .header p {
-        font-size: 3.5em;
-    }
-
-    .sbox {
-        width: 40%;
-    }
-
-    .sbox1 {
-        width: 80%;
-    }
-}
-
-@media screen and (max-width: 575.99px) {
-    .header {
-        height: 400px;
-        vertical-align: middle;
-    }
-
-
-    .header h1 {
-        font-size: 2em;
-    }
-
-    .header p {
-        font-size: 2.8em;
+        font-size: 2.1em;
     }
 
     .sbox {
         width: 70%;
     }
 
-    .sbox1 {
-        width: 90%;
+    .sbox>h1 {
+        font-size: 2em;
+        margin: 30px 5px 0px 150px;
     }
+
+    .sbox>h2 {
+        font-size: 1.4em;
+        margin: 30px 15px 0px 50px;
+    }
+
+    .sbox1 {
+        width: 100%;
+        height: 100%;
+        margin: 20px;
+    }
+
+    .sbox1:nth-child(2n+1) {
+        display: none;
+    }
+
+    .sbox1:nth-child(2n+2) {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        padding: 0%;
+    }
+
+    .sbox1>h1 {
+        font-size: 1.2em;
+    }
+
+    .sbox1>p {
+        font-size: 1em;
+    }
+
+    .box4 {
+        display: block;
+    }
+
+    .sbox2line {
+        border-right: 0;
+    }
+
+    .sbox2 {
+        display: block;
+        width: 100%;
+        padding: 10px;
+    }
+
+    .sbox2 i {
+        display: none;
+        margin: 0;
+    }
+
+    .sbox2 h1 {
+        margin: 0;
+    }
+
+    .sbox2 p {
+        margin: 0;
+    }
+}
+
+
+@media screen and (min-width: 420px) and (max-width: 575.99px) {
+    .header h1 {
+        font-size: 2em;
+    }
+
+    .header p {
+        font-size: 1.8em;
+    }
+
+    .sbox {
+        width: 70%;
+    }
+
+    .sbox>h1 {
+        font-size: 2em;
+        margin: 30px 5px 0px 150px;
+    }
+
+    .sbox>h2 {
+        font-size: 1.4em;
+        margin: 30px 15px 0px 50px;
+    }
+
+
+    .sbox1 {
+        width: 100%;
+        height: 100%;
+        margin: 10px;
+    }
+
+    .sbox1:nth-child(2n+1) {
+        display: none;
+    }
+
+    .sbox1:nth-child(2n+2) {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        padding: 0;
+    }
+
+    .sbox1>h1 {
+        font-size: 1.2em;
+    }
+
+    .sbox1>p {
+        font-size: 1em;
+    }
+
+    .box4 {
+        display: block;
+    }
+
+    .sbox2line {
+        border-right: 0;
+    }
+
+    .sbox2 {
+        display: block;
+        width: 100%;
+        padding: 10px;
+    }
+
+    .sbox2 i {
+        display: none;
+        margin: 0;
+    }
+
+    .sbox2 h1 {
+        margin: 0;
+    }
+
+    .sbox2 p {
+        margin: 0;
+    }
+}
+
+
+
+@media screen and (max-width: 419.99px) {
+    .navbar-ul {
+        height: 40px;
+        list-style-type: none;
+        display: flex;
+        flex-direction: row-reverse;
+        margin-right: 10px;
+
+    }
+
+    .navbar-ul li {
+        margin-right: 5px;
+    }
+
+    .header h1 {
+        font-size: 2em;
+    }
+
+    .header p {
+        font-size: 1.8em;
+    }
+
+    .sbox {
+        width: 70%;
+    }
+
+    .sbox>h1 {
+        font-size: 1.8em;
+        margin: 20px 5px 0px 150px;
+    }
+
+    .sbox>h2 {
+        font-size: 1.4em;
+        margin: 20px 15px 0px 20px;
+    }
+
+    .sbox1 {
+        width: 100%;
+        height: 100%;
+        margin: 10px;
+    }
+
+    .sbox1:nth-child(2n+1) {
+        display: none;
+    }
+
+    .sbox1:nth-child(2n+2) {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        padding: 0;
+    }
+
+    .sbox1>h1 {
+        font-size: 1em;
+    }
+
+    .sbox1>p {
+        font-size: 1em;
+    }
+
+    .box4 {
+        display: block;
+        margin-top: 10px;
+    }
+}
+
+.sbox2line {
+    border-right: 0;
+}
+
+.sbox2 {
+    display: block;
+    width: 100%;
+    padding: 10px;
+}
+
+.sbox2 i {
+    display: none;
+    margin: 0;
+}
+
+.sbox2 h1 {
+    margin: 0;
+}
+
+.sbox2 p {
+    margin: 0;
 }
