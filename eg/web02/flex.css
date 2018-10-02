@@ -19,6 +19,12 @@ img {
     vertical-align: middle;
 }
 
+h1 {
+    padding: 20px;
+    text-align: center;
+    font-size: 40px;
+}
+
 .box {
     width: 80%;
     margin: 0 auto;
