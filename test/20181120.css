@@ -1,0 +1,23 @@
+.rect {
+    height: 20px;
+    width: 20px;
+    border-color: red blue yellow green;
+    border-style: solid;
+    border-width: 20px;
+}
+
+.rect1 {
+    height: 0px;
+    width: 0px;
+    border-color: red blue yellow green;
+    border-style: solid;
+    border-width: 20px;
+}
+
+.rect2 {
+    height: 0px;
+    width: 0px;
+    border-color: transparent blue transparent transparent;
+    border-style: solid;
+    border-width: 20px;
+}
