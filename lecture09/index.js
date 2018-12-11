@@ -13,4 +13,4 @@ var sum = add(9, 10);
 
 console.log(sum);
 
-onclick = "document.getElementById('id1').style.color = 'red'"
+onclick = "document.getElementById('id1').style.color = 'red'";
